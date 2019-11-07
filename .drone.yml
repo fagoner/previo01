@@ -4,9 +4,10 @@ name: demo
 
 steps:
 - name: show README.md
-  image: alpine
+  image: adoptopenjdk/openjdk8:jdk8u222-b10
   commands:
-  -  cat README.md
+  - javac Greet.java
+  - ls 
   when:
     branch:
     - feature/*
