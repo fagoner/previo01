@@ -7,7 +7,7 @@ steps:
   image: adoptopenjdk/openjdk8:jdk8u222-b10
   commands:
   - javac Greet.java
-  - ls 
+  - java Greet 
   when:
     branch:
     - feature/*
